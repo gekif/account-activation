@@ -24,3 +24,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/activate/{code}', 'ActivationController@activation')
     ->name('user.activation');
+
+
+Route::get('/resend/code', 'ActivationController@coderesend')
+    ->name('code.resend');
